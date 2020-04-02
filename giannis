@@ -1,0 +1,18 @@
+#Made a logging page.The logic behind is that anybody who knows the password can log in. In case of 3 wrong attempts one should not be aloud to enter the game. At a later stage each one can choose a team example red, green etc we have to figure out how many teams we are going to have in the game
+print("Quiz for smart folks")
+i=0
+l=0
+while i < 3:
+    password = input(f'Please enter the password', )
+    i=i+1
+    if password=='CEMS':
+        print("welcome CEMSIE")
+        break
+    else:
+        print("please try again")
+        l=l+1
+
+if l==3:
+    print("sorry you got the password 3 times wrong")
+    #here we need to stop the loging process forcing the system for exit
+    
